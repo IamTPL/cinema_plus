@@ -1,0 +1,21 @@
+.filmTab {
+    height: 200px;
+    overflow-y: auto;
+}
+
+.filmTab::-webkit-scrollbar {
+    width: 8px;
+}
+
+.filmTab::-webkit-scrollbar-track {
+    background-color: rgb(60, 60, 60);
+}
+
+.filmTab::-webkit-scrollbar-thumb {
+    background-color: rgba(195, 64, 12, 0.8);
+    border-radius: 5px;
+}
+
+.filmTab::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 89, 23, 0.8);
+}

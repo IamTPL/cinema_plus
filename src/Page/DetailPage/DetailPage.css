@@ -1,0 +1,7 @@
+.showtimes {
+    border-bottom: 1px solid #757575;
+}
+
+.showtimes:last-child {
+    border: none;
+}

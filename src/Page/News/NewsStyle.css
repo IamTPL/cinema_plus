@@ -1,0 +1,41 @@
+.news
+    :where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs
+    .ant-tabs-tab.ant-tabs-tab-active
+    .ant-tabs-tab-btn {
+    color: rgb(195, 65, 12);
+}
+
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs .ant-tabs-tab:hover {
+    color: rgb(195, 65, 12);
+}
+
+.ant-tabs-ink-bar {
+    background-color: transparent;
+}
+
+.news .ant-tabs-tab {
+    color: rgb(228, 228, 231);
+}
+
+.news .ant-tabs-tab-btn {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.news
+    :where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-top
+    > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-bottom
+    > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-top
+    > div
+    > .ant-tabs-nav::before,
+:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-bottom
+    > div
+    > .ant-tabs-nav::before {
+    border: none;
+}
+
+.news .ant-tabs-ink-bar {
+    background-color: transparent !important;
+}

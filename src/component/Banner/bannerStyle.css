@@ -1,0 +1,17 @@
+.ant-carousel .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: none;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background-color: rgb(194, 65, 12);
+}
+
+.banner .slick-dots li button:before {
+    display: none !important;
+}

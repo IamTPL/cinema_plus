@@ -1,0 +1,43 @@
+.multipleItem .slick-dots li {
+    background: rgba(65, 65, 65, 0.4);
+    margin: 0 !important;
+    width: 20px !important;
+    height: 5px !important;
+}
+
+.slick-dots li:first-child {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.slick-dots li:last-child {
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.slick-dots li button:before {
+    content: '' !important;
+    font-family: 'Times New Roman', Times, serif;
+    height: 50px;
+    background: transparent;
+    border-radius: 1000px !important;
+    transform: translateY(-7px);
+}
+
+.slick-dots li.slick-active button:before {
+    width: 45px !important;
+    background: rgb(195, 65, 12);
+    opacity: 1 !important;
+    z-index: 10;
+}
+
+.multipleItem .slick-dots {
+    top: -65px !important;
+    left: -300px;
+    z-index: -1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    display: none;
+}

@@ -1,25 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomePage from './Page/HomePage/HomePage';
+import LoginPage from './Page/LoginPage/LoginPage';
+import Layout from './Layout/Layout';
+import Spinner from './component/Spinner/Spinner';
+import DetailPage from './Page/DetailPage/DetailPage';
+import BookingPage from './Page/BookingPage/BookingPage';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="">
+            <Spinner></Spinner>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/"
+                        element={<Layout Component={HomePage}></Layout>}
+                    ></Route>
+                    <Route
+                        path="/login"
+                        element={<LoginPage></LoginPage>}
+                    ></Route>
+                    <Route
+                        path="/detail/:id"
+                        element={<Layout Component={DetailPage}></Layout>}
+                    ></Route>
+                    <Route
+                        path="/booking/:id"
+                        element={<Layout Component={BookingPage}></Layout>}
+                    ></Route>
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
 }
 
 export default App;

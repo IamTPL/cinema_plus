@@ -1,0 +1,16 @@
+.ant-card-body {
+    padding: 0 !important;
+    color: #00000080;
+}
+
+.overlayCard {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2) 30%,
+        rgba(0, 0, 0, 0.8) 70%
+    );
+}
+
+.card:hover .overlayCard {
+    opacity: 1;
+    transition: all 0.3s;
+}
