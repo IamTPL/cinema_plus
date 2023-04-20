@@ -2,11 +2,11 @@
     :where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs
     .ant-tabs-tab.ant-tabs-tab-active
     .ant-tabs-tab-btn {
-    color: rgb(195, 65, 12);
+    color: rgb(195, 65, 12) !important;
 }
 
 :where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs .ant-tabs-tab:hover {
-    color: rgb(195, 65, 12);
+    color: rgb(195, 65, 12) !important;
 }
 
 .ant-tabs-ink-bar {
