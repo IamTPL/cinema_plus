@@ -5,8 +5,8 @@ import eventImg1 from '../../assets/img/event1.jpg';
 import eventImg2 from '../../assets/img/event2.png';
 import eventImg3 from '../../assets/img/event3.jpg';
 import eventImg4 from '../../assets/img/event4.jpg';
-
 import './NewsStyle.css';
+
 const items = [
     {
         key: '1',

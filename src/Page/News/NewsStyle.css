@@ -1,11 +1,8 @@
-.news
-    :where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs
-    .ant-tabs-tab.ant-tabs-tab-active
-    .ant-tabs-tab-btn {
+.news .ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
     color: rgb(195, 65, 12) !important;
 }
 
-:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs .ant-tabs-tab:hover {
+.ant-tabs .ant-tabs-tab:hover {
     color: rgb(195, 65, 12) !important;
 }
 
@@ -14,7 +11,7 @@
 }
 
 .news .ant-tabs-tab {
-    color: rgb(228, 228, 231);
+    color: rgb(228, 228, 231) !important;
 }
 
 .news .ant-tabs-tab-btn {
@@ -22,18 +19,11 @@
     font-weight: bold;
 }
 
-.news
-    :where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-top
-    > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-bottom
-    > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-top
-    > div
-    > .ant-tabs-nav::before,
-:where(.css-dev-only-do-not-override-1e3x2xa).ant-tabs-bottom
-    > div
-    > .ant-tabs-nav::before {
-    border: none;
+.news .ant-tabs-top > .ant-tabs-nav::before,
+.ant-tabs-bottom > .ant-tabs-nav::before,
+.ant-tabs-top > div > .ant-tabs-nav::before,
+.ant-tabs-bottom > div > .ant-tabs-nav::before {
+    border: none !important;
 }
 
 .news .ant-tabs-ink-bar {
