@@ -18,4 +18,11 @@ export const userServ = {
             headers: configHeader(),
         });
     },
+    getInfoAccount: () => {
+        return axios({
+            url: `${BASE_URL}/api/QuanLyNguoiDung/ThongTinTaiKhoan`,
+            method: 'POST',
+            headers: configHeader(),
+        });
+    },
 };

@@ -124,7 +124,7 @@ export default function LoginPage() {
                             className="trial_use_btn flex items-center text-base font-medium text-zinc-400 border-none duration-300 sm:-translate-x-24"
                             onClick={() => {
                                 onFinish({
-                                    taiKhoan: 'abc123',
+                                    taiKhoan: 'user01',
                                     matKhau: '123456',
                                 });
                             }}

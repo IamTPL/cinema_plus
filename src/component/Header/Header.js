@@ -36,9 +36,11 @@ const Header = () => {
         if (userInfo) {
             return (
                 <div className="flex items-center">
-                    <button className="text-zinc-300 text-lg md:text-base sm:text-sm font-medium p-2 sm:p-0 duration-300 hover:text-white">
-                        {userInfo.hoTen}
-                    </button>
+                    <NavLink to="/booking_history">
+                        <button className="text-zinc-300 text-lg md:text-base sm:text-sm font-medium p-2 sm:p-0 duration-300 hover:text-white">
+                            {userInfo.hoTen}
+                        </button>
+                    </NavLink>
                     <span className="mx-5 md:mx-1 text-orange-700">|</span>
                     <button
                         onClick={handleLogout}

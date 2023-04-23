@@ -9,6 +9,7 @@ import {
 } from '../../Page/redux/constant/spinnerConstant';
 import './ticketDetail.css';
 import { CLEAR_SEAT } from '../../Page/redux/constant/bookingConstant';
+import { bookingServ } from '../../services/bookingService';
 
 const TicketDetail = ({ id }) => {
     const [detailFilm, setDeatailFilm] = useState();
@@ -36,9 +37,14 @@ const TicketDetail = ({ id }) => {
         return Intl.NumberFormat().format(totalPay);
     };
 
-    const handlePayment = () => {
+    const handlePayment = async () => {
         const MySwal = withReactContent(Swal);
         if (seatsArr.length !== 0) {
+            await bookingServ.bookTicket({
+                maLichChieu: id,
+                danhSachVe: seatsArr,
+            });
+
             MySwal.fire({
                 icon: 'success',
                 title: 'Booking successful!',
@@ -66,8 +72,11 @@ const TicketDetail = ({ id }) => {
                             <div className="flex justify-between text-zinc-200">
                                 <span>Seats:</span>
                                 <span className="text-zinc-500 flex flex-wrap">
-                                    {seatsArr.map((seat) => (
-                                        <span className="text-zinc-500 mx-1 seat">
+                                    {seatsArr.map((seat, index) => (
+                                        <span
+                                            key={index}
+                                            className="text-zinc-500 mx-1 seat"
+                                        >
                                             {seat.tenGhe}
                                         </span>
                                     ))}
@@ -90,7 +99,7 @@ const TicketDetail = ({ id }) => {
                 })
                 .then(() => {
                     dispatch({ type: CLEAR_SEAT });
-                    window.location.href = '/';
+                    window.location.href = '/booking_history';
                 });
         } else {
             MySwal.fire({

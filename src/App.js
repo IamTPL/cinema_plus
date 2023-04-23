@@ -7,6 +7,7 @@ import Spinner from './component/Spinner/Spinner';
 import DetailPage from './Page/DetailPage/DetailPage';
 import BookingPage from './Page/BookingPage/BookingPage';
 import SignPage from './Page/SignPage/SignPage';
+import BookingHistory from './Page/BookingHistory/BookingHistory';
 
 function App() {
     return (
@@ -25,6 +26,10 @@ function App() {
                     <Route
                         path="/sign_up"
                         element={<SignPage></SignPage>}
+                    ></Route>
+                    <Route
+                        path="/booking_history"
+                        element={<Layout Component={BookingHistory}></Layout>}
                     ></Route>
                     <Route
                         path="/detail/:id"

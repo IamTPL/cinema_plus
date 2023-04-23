@@ -49,9 +49,9 @@ const DetailPage = () => {
                 label: <img src={heThongRap.logo} alt="" className="w-20" />,
                 children: heThongRap.cumRapChieu.map((cumRap, index) => {
                     return (
-                        <div key={index} className="showtimes">
-                            <div className="flex my-5 mb-8">
-                                <span className="bg-orange-600 sm:h-6 text-zinc-300 font-bold rounded-md px-2 leading-[25px]">
+                        <div key={index} className="showtimes w-fit">
+                            <div className="flex sm:w-52 my-5 mb-8">
+                                <span className="bg-orange-600 h-7 text-zinc-300 font-bold rounded-md px-2 leading-[27px]">
                                     C16
                                 </span>
                                 <span className="mx-3 text-zinc-500">|</span>
@@ -59,7 +59,7 @@ const DetailPage = () => {
                                     {cumRap.tenCumRap}
                                 </h3>
                             </div>
-                            <div className="mb-5">
+                            <div className="flex flex-wrap gap-y-3 mb-5">
                                 {cumRap.lichChieuPhim.map((lich, index) => {
                                     return (
                                         <span
@@ -69,7 +69,7 @@ const DetailPage = () => {
                                                     lich.maLichChieu
                                                 );
                                             }}
-                                            className="cursor-pointer text-orange-700 bg-zinc-400 border-2 border-zinc-600 px-3 py-1.5 rounded-md mr-5 text-xl"
+                                            className="cursor-pointer text-orange-700 bg-zinc-400 border-2 border-zinc-600 px-3 py-1.5 rounded-md mr-5 sm:mr-2 text-xl sm:text-base"
                                         >
                                             {moment(
                                                 lich.ngayChieuGioChieu
