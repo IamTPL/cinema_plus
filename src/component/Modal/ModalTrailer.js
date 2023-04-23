@@ -30,8 +30,7 @@ const ModalTrailer = () => {
                     title='Phim "Bàn Tay Diệt Quỷ" Teaser Trailer | KC 09.04.2021'
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     allowFullScreen="{true}"
-                    width="600px"
-                    height="400px"
+                    className="w-[600px] h-[400px] md:w-[400px] md:h-[300px] mx-auto sm:w-[300px] sm:h-[200px] my-auto"
                 />
             </Modal>
         </>

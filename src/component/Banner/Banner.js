@@ -6,7 +6,7 @@ import { SHOW_MODAL } from '../../Page/redux/constant/modalConstant';
 import { useDispatch } from 'react-redux';
 
 const contentStyle = {
-    height: '600px',
+    // height: '600px',
     color: '#fff',
     textAlign: 'center',
 };
@@ -27,7 +27,7 @@ const Banner = () => {
     }, []);
 
     return (
-        <div className="banner mt-[65px]">
+        <div className="banner mt-[65px] md:mt-16">
             <Carousel autoplay>
                 {bannerData &&
                     bannerData.map((banner, index) => {
@@ -55,11 +55,11 @@ const Banner = () => {
                                             style={contentStyle}
                                             src={banner.hinhAnh}
                                             alt=""
-                                            className="object-contain"
+                                            className="object-cover h-[600px] md:h-[300px] sm:h-[200px]"
                                         />
                                         <button
                                             type="button"
-                                            className="text-zinc-50 text-lg font-bold border bg-orange-700 border-orange-700 duration-300 hover:bg-black hover:text-orange-700 hover:border-orange-700 px-5 py-2.5 absolute bottom-20 left-16 rounded-3xl"
+                                            className="text-zinc-50 text-lg md:text-base sm:text-xs font-bold border bg-orange-700 border-orange-700 duration-300 hover:bg-black hover:text-orange-700 hover:border-orange-700 px-5 sm:px-2.5 py-2.5 sm:py-2 absolute bottom-20 md:bottom-12 sm:bottom-8 left-16 sm:left-8 rounded-3xl"
                                             onClick={() => {
                                                 dispatch({
                                                     type: SHOW_MODAL,

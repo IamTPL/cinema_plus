@@ -22,12 +22,12 @@ export default function ListMovieComingSoon() {
     }, []);
 
     return (
-        <div className="mt-20 relative">
+        <div className="mt-20 sm:mt-10 relative">
             {/* {movies?.map((item, index) => {
                 return <CardMovie movie={item} key={index}></CardMovie>;
             })} */}
             <h2
-                className="text-2xl font-bold text-zinc-200 container mx-auto mb-10"
+                className="text-2xl font-bold text-zinc-200 px-10 md:px-5 sm:px-1 mx-auto mb-10"
                 style={{ userSelect: 'none' }}
             >
                 Coming Soon

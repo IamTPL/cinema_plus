@@ -56,6 +56,32 @@ export default class MultipleItems extends Component {
             centerMode: true,
             prevArrow: <SamplePrevArrow />,
             nextArrow: <SampleNextArrow />,
+            responsive: [
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                    },
+                },
+                {
+                    breakpoint: 890,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    },
+                },
+                {
+                    breakpoint: 599,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        initialSlide: 1,
+                    },
+                },
+            ],
         };
         return (
             <div className="multipleItem flex justify-center">

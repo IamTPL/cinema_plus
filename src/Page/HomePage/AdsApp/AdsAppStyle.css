@@ -1,3 +1,6 @@
 .adsApp {
     background-image: url(../../../assets/img/backapp.b46ef3a1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }

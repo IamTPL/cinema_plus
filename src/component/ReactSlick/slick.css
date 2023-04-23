@@ -33,11 +33,16 @@
 
 .multipleItem .slick-dots {
     top: -65px !important;
-    left: -300px;
     z-index: -1;
 }
 
 .slick-prev:before,
 .slick-next:before {
     display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .multipleItem .slick-dots li {
+        display: none;
+    }
 }

@@ -1,0 +1,23 @@
+.ant-form-item .ant-form-item-label > label {
+    color: rgb(194, 65, 12);
+}
+
+.login_form .btn-login.ant-btn-default:not(:disabled):hover {
+    background: #000;
+    color: rgb(194, 65, 12);
+    border: 1px solid rgb(194, 65, 12);
+}
+
+.login_form .ant-btn-default.btn-sign_up:not(:disabled):hover {
+    background: rgb(194, 65, 12);
+    color: #fff;
+    border: 1px solid rgb(194, 65, 12);
+}
+
+.trial_use_btn {
+    text-decoration: underline;
+}
+
+.trial_use_btn.ant-btn-default:not(:disabled):hover {
+    color: rgb(194, 65, 12);
+}

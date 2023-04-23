@@ -36,13 +36,13 @@ const Header = () => {
         if (userInfo) {
             return (
                 <div className="flex items-center">
-                    <button className="text-zinc-300 text-lg font-medium p-2 duration-300 hover:text-white">
+                    <button className="text-zinc-300 text-lg md:text-base sm:text-sm font-medium p-2 sm:p-0 duration-300 hover:text-white">
                         {userInfo.hoTen}
                     </button>
-                    <span className="mx-5 text-orange-700">|</span>
+                    <span className="mx-5 md:mx-1 text-orange-700">|</span>
                     <button
                         onClick={handleLogout}
-                        className="text-zinc-500 text-lg font-medium p-2 duration-300 hover:text-zinc-100"
+                        className="text-zinc-500 text-lg md:text-base sm:text-sm font-medium p-2 sm:p-0 duration-300 hover:text-zinc-100"
                     >
                         Logout
                     </button>
@@ -52,26 +52,28 @@ const Header = () => {
             return (
                 <div className="flex items-center">
                     <NavLink to="/login">
-                        <button className="text-zinc-500 text-lg font-medium p-2 duration-300 hover:text-white">
+                        <button className="text-zinc-500 text-lg md:text-base sm:text-sm font-medium p-2 sm:p-0 duration-300 hover:text-white">
                             Login
                         </button>
                     </NavLink>
                     <span
-                        className="mx-5 text-orange-700"
+                        className="mx-5 md:mx-1 text-orange-700"
                         style={{ userSelect: 'none' }}
                     >
                         |
                     </span>
-                    <button className="text-zinc-500 text-lg font-medium p-2 duration-300 hover:text-white">
-                        Sign in
-                    </button>
+                    <NavLink to="/sign_up">
+                        <button className="text-zinc-500 text-lg md:text-base sm:text-sm font-medium p-2 sm:p-0 duration-300 hover:text-white">
+                            Resgister
+                        </button>
+                    </NavLink>
                 </div>
             );
         }
     };
     return (
-        <div>
-            <div className="navbar duration-300 shadow-sm shadow-zinc-800 mx-auto h-16 flex justify-between items-center px-10 fixed top-0 left-0 w-full z-50 bg-[rgb(15,15,15,0.95)]">
+        <div className="w-full fixed top-0 left-0 z-50 bg-[rgb(15,15,15,0.95)] shadow-sm shadow-zinc-800">
+            <div className="px-20 lg:px-10 md:px-5 sm:px-1 mx-auto navbar duration-300 h-16 flex justify-between items-center">
                 <NavLink
                     to="/"
                     onClick={() => {
@@ -82,10 +84,10 @@ const Header = () => {
                         className="hover:opacity-80 duration-300"
                         style={{ userSelect: 'none' }}
                     >
-                        <i className="fa-solid fa-masks-theater text-white text-3xl mr-3"></i>
-                        <span className="text-2xl font-extrabold text-orange-700">
+                        <i className="fa-solid fa-masks-theater text-white text-3xl sm:text-xl mr-3 sm:mr-1"></i>
+                        <span className="text-2xl sm:text-base font-extrabold text-orange-700">
                             Cinema.
-                            <span className=" text-3xl text-zinc-100 font-black">
+                            <span className=" text-3xl sm:text-base text-zinc-100 font-black">
                                 Plus
                             </span>
                         </span>

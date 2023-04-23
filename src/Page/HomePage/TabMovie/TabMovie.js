@@ -65,7 +65,7 @@ const TabMovie = () => {
     };
 
     return (
-        <div className="max-w-4xl mx-auto mt-20 border border-zinc-600">
+        <div className="md:hidden block max-w-4xl mx-auto mt-20 border border-zinc-600">
             <Tabs
                 style={{ height: 600 }}
                 className="bg-zinc-800"

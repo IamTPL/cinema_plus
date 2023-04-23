@@ -19,16 +19,18 @@ const items = [
                         src="https://images.bauerhosting.com/empire/2023/04/russos-zack-snyder.jpg?q=80&auto=format&w=400&ar=16:9&fit=crop&crop=top"
                         alt=""
                     />
-                    <h3 className="text-zinc-200 text-lg font-medium mt-3">
+                    <h3 className="text-zinc-200 text-lg md:text-base sm:text-sm font-medium mt-3">
                         The Russo Brothers Interview Zack Snyder About Justice
                         League In Pizza Film School Episode
                     </h3>
-                    <p className="text-zinc-400 mt-4 mb-1">
+                    <p className="text-zinc-400 mt-4 mb-1 sm:text-xs">
                         Recently, we heard James Gunn talking about the
                         possibility of a DC and Marvel...
                     </p>
                     <div>
-                        <span className="text-orange-700">Movies</span>
+                        <span className="text-orange-700 sm:text-xs">
+                            Movies
+                        </span>
                         <span className="text-zinc-500 text-lg mx-2">|</span>
                         <span className="text-zinc-500">16 hours ago</span>
                     </div>
@@ -40,78 +42,86 @@ const items = [
                         src="https://images.bauerhosting.com/empire/2023/04/boogeyman-main.jpg?q=80&auto=format&w=400&ar=16:9&fit=crop&crop=top"
                         alt=""
                     />
-                    <h3 className="text-zinc-200 text-lg font-medium mt-3">
+                    <h3 className="text-zinc-200 text-lg md:text-base sm:text-sm font-medium mt-3">
                         New Trailer For The Boogeyman: The Horror Is Not All In
                         Their Head
                     </h3>
-                    <p className="text-zinc-400 mt-4 mb-1">
+                    <p className="text-zinc-400 mt-4 mb-1 sm:text-xs">
                         You might have seen our recent exclusive interview with
                         Host and now The...
                     </p>
                     <div>
-                        <span className="text-orange-700">Movies</span>
+                        <span className="text-orange-700 sm:text-xs">
+                            Movies
+                        </span>
                         <span className="text-zinc-500 text-lg mx-2">|</span>
                         <span className="text-zinc-500">23 hours ago</span>
                     </div>
                 </div>
 
-                <div className="col-start-1 col-end-3 cursor-pointer">
+                <div className="col-start-1 col-end-3 sm:col-end-4 cursor-pointer">
                     <img
                         className="w-full rounded-md"
                         src="https://images.bauerhosting.com/empire/2023/04/mia-goth.jpg?q=80&auto=format&w=400&ar=16:9&fit=crop&crop=top"
                         alt=""
                     />
-                    <h3 className="text-zinc-200 text-lg font-medium mt-3">
+                    <h3 className="text-zinc-200 text-lg md:text-base sm:text-sm font-medium mt-3">
                         Mia Goth Joins Marvel’s Blade
                     </h3>
-                    <p className="text-zinc-400 mt-4 mb-1">
+                    <p className="text-zinc-400 mt-4 mb-1 sm:text-xs">
                         Mia Goth is having quite the moment. Between the success
                         of her character from...
                     </p>
                     <div>
-                        <span className="text-orange-700">Movies</span>
+                        <span className="text-orange-700 sm:text-xs">
+                            Movies
+                        </span>
                         <span className="text-zinc-500 text-lg mx-2">|</span>
                         <span className="text-zinc-500">18 04 2023</span>
                     </div>
                 </div>
 
-                <div className="col-start-3 col-end-5 cursor-pointer">
+                <div className="col-start-3 col-end-5 sm:col-start-4 sm:col-end-7 cursor-pointer">
                     <img
                         className="w-full rounded-md"
                         src="https://images.bauerhosting.com/empire/2023/04/ethan-coen.jpg?q=80&auto=format&w=400&ar=16:9&fit=crop&crop=top"
                         alt=""
                     />
-                    <h3 className="text-zinc-200 text-lg font-medium mt-3">
+                    <h3 className="text-zinc-200 text-lg md:text-base sm:text-sm font-medium mt-3">
                         Ethan Coen Has A New Film Drive-Away Dolls, And It’s
                         Arriving Later This Year
                     </h3>
-                    <p className="text-zinc-400 mt-4 mb-1">
+                    <p className="text-zinc-400 mt-4 mb-1 sm:text-xs">
                         For decades, the Coen Brothers were one of the most
                         consistently brilliant...
                     </p>
                     <div>
-                        <span className="text-orange-700">Movies</span>
+                        <span className="text-orange-700 sm:text-xs">
+                            Movies
+                        </span>
                         <span className="text-zinc-500 text-lg mx-2">|</span>
                         <span className="text-zinc-500">15 04 2023</span>
                     </div>
                 </div>
 
-                <div className="col-start-5 col-end-7 cursor-pointer">
+                <div className="col-start-5 col-end-7 sm:col-start-1 sm:col-end-4 cursor-pointer">
                     <img
                         className="w-full rounded-md"
                         src="https://images.bauerhosting.com/empire/2023/04/hypnotic-main.jpg?q=80&auto=format&w=750&ar=16:9&fit=crop&crop=top"
                         alt=""
                     />
-                    <h3 className="text-zinc-200 text-lg font-medium mt-3">
+                    <h3 className="text-zinc-200 text-lg md:text-base sm:text-sm font-medium mt-3">
                         Ben Affleck’s having a good year so far, with Air
                         successful and his...
                     </h3>
-                    <p className="text-zinc-400 mt-4 mb-1">
+                    <p className="text-zinc-400 mt-4 mb-1 sm:text-xs">
                         You might have seen our recent exclusive interview with
                         Host and now The...
                     </p>
                     <div>
-                        <span className="text-orange-700">Movies</span>
+                        <span className="text-orange-700 sm:text-xs">
+                            Movies
+                        </span>
                         <span className="text-zinc-500 text-lg mx-2">|</span>
                         <span className="text-zinc-500">13 04 2023</span>
                     </div>
@@ -124,7 +134,7 @@ const items = [
         label: `DISCOUNT`,
         children: (
             <div className="text-center">
-                <h3 className="text-zinc-400 font-bold text-2xl mb-5">
+                <h3 className="text-zinc-400 font-bold text-2xl sm:text-lg mb-5">
                     * No discount available now. Please come back later.
                     <i className="fa-solid fa-face-sad-tear text-2xl ml-2"></i>
                     <i className="fa-solid fa-face-sad-tear text-2xl mx-2"></i>
@@ -142,7 +152,7 @@ const items = [
         key: '3',
         label: `EVENT`,
         children: (
-            <div className="flex space-x-3">
+            <div className="flex items-center justify-center space-x-3">
                 <a
                     href="https://apps.apple.com/vn/app/tix-đặt-vé-nhanh-nhất/id615186197"
                     target="_blank"
@@ -182,7 +192,7 @@ const items = [
                     rel="noopener noreferrer"
                 >
                     <img
-                        className="rounded-md w-60 h-52"
+                        className="rounded-md"
                         src={eventImg4}
                         alt="event image"
                     />
@@ -194,7 +204,7 @@ const items = [
 
 const News = () => {
     return (
-        <div className="news mt-20 container mx-auto lg:px-32">
+        <div className="news mt-20 sm:mt-10 container px-20 md:px-10 sm:px-5 mx-auto lg:px-32">
             <Tabs defaultActiveKey="1" items={items} centered />
         </div>
     );

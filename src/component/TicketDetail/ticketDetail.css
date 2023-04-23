@@ -1,0 +1,18 @@
+.swal2-container.swal2-center > .swal2-popup {
+    background-color: #1e1e1e;
+}
+.swal2-title {
+    color: rgb(228, 228, 231);
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border-color: rgb(194, 65, 12);
+}
+
+.swal2-icon.swal2-success [class^='swal2-success-line'] {
+    background: rgb(194, 65, 12);
+}
+
+.seat:not(.seat:last-child)::after {
+    content: ',';
+}

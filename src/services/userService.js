@@ -10,4 +10,12 @@ export const userServ = {
             headers: configHeader(),
         });
     },
+    postRegister: (account) => {
+        return axios({
+            url: `${BASE_URL}/api/QuanLyNguoiDung/DangKy`,
+            method: 'POST',
+            data: account,
+            headers: configHeader(),
+        });
+    },
 };

@@ -22,12 +22,12 @@ export default function ListMovie() {
     }, []);
 
     return (
-        <div className="listMovie mt-20">
+        <div className="listMovie mt-20 sm:mt-10">
             {/* {movies?.map((item, index) => {
                 return <CardMovie movie={item} key={index}></CardMovie>;
             })} */}
             <h2
-                className="text-2xl font-bold text-zinc-200 container mx-auto mb-10"
+                className="text-2xl font-bold text-zinc-200 container px-10 md:px-5 sm:px-1 mx-auto mb-10"
                 style={{ userSelect: 'none' }}
             >
                 Movie Selection
