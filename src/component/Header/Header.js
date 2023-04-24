@@ -73,9 +73,10 @@ const Header = () => {
             );
         }
     };
+
     return (
-        <div className="w-full fixed top-0 left-0 z-50 bg-[rgb(15,15,15,0.95)] shadow-sm shadow-zinc-800">
-            <div className="px-20 lg:px-10 md:px-5 sm:px-1 mx-auto navbar duration-300 h-16 flex justify-between items-center">
+        <div className="navbar w-full fixed top-0 left-0 z-50 bg-[rgb(15,15,15,0.95)] shadow-sm shadow-zinc-800 duration-300">
+            <div className="px-20 lg:px-10 md:px-5 sm:px-1 mx-auto duration-300 h-16 flex justify-between items-center">
                 <NavLink
                     to="/"
                     onClick={() => {
