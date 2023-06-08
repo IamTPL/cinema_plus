@@ -4,7 +4,7 @@ import { BASE_URL, configHeader } from './config';
 export const movieServ = {
     getMovieList: () => {
         return axios.get(
-            `${BASE_URL}/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP00`,
+            `${BASE_URL}/api/QuanLyPhim/LayDanhSachPhim?maNhom=GP03`,
             { headers: configHeader() }
         );
     },
